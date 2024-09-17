@@ -42,7 +42,7 @@ const Home = () => {
           :
           0
 
-          }
+          } €
           </span> 
         </span>
         

@@ -54,13 +54,13 @@ const Expense = ({
            <h2 className="expense__name">{title}</h2>
            </div>
            <div className="content">
-           <p className="expense__amount">${amount}</p>
+           <p className="expense__amount">{amount} €</p>
            </div>
            <div className="content">
            <p className="expense__amount">{rate}%</p>
            </div>
            <div className="content">
-           <p className="expense__amount">${(amount+amount*(rate/100)).toFixed(2)}</p>
+           <p className="expense__amount">{(amount+amount*(rate/100)).toFixed(2)} €</p>
            </div>
            <div className="content">
            <div className="expense__buttons">
