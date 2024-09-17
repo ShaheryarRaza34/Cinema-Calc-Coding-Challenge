@@ -49,23 +49,28 @@ const Expense = ({
   }
 
   return (
-
-
-    
-    <div className="editexpense">
-   
       <div className="expense__body">
+        <div className="content">
            <h2 className="expense__name">{title}</h2>
+           </div>
+           <div className="content">
            <p className="expense__amount">${amount}</p>
+           </div>
+           <div className="content">
            <p className="expense__amount">{rate}%</p>
+           </div>
+           <div className="content">
            <p className="expense__amount">${(amount+amount*(rate/100)).toFixed(2)}</p>
+           </div>
+           <div className="content">
            <div className="expense__buttons">
              <button className="expense__deleteButton" onClick={submitDelete}>
              <FontAwesomeIcon icon={faTrash} />
              </button>
              <button className="expense__editButton" onClick={() => setModalOpen(true)}><FontAwesomeIcon icon={faEdit} /></button>
            </div>
-      </div>
+           </div>
+      
            <Modal showModal={isModalOpen} onClose={() => setModalOpen(false)}>
             <div className="expense-form">
           

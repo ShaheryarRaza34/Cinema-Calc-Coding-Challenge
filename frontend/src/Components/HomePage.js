@@ -37,7 +37,7 @@ const Home = () => {
         <span>
           Your total expense for the film is  <span className="pendingTasks">{data?
           (
-            data.reduce((total, expense) => total + expense.amount, 0).toFixed(2)
+            data.reduce((total, expense) => total + expense.amount + expense.amount*(expense.rate/100), 0).toFixed(2)
           )
           :
           0

@@ -16,7 +16,7 @@ async function service(args = IAPArgs) {
     method = "GET",
     body = {},
     headers = {},
-    queryParams = null,
+    
     baseDomain,
     parseJSON = true,
     ...extraProps

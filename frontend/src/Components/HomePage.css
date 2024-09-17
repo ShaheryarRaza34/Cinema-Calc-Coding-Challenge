@@ -88,7 +88,7 @@ body {
 }
 
 .expense-content {
-  max-height: 250px;
+  height: auto;
   overflow-y: auto;
   margin-bottom: 20px;
 }
@@ -96,7 +96,9 @@ body {
 .expense__body {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  justify-content: space-evenly;
   padding: 10px;
   border-radius: 10px;
   background-color: #f9f9f9;
@@ -105,9 +107,23 @@ body {
   gap: 10px; 
 }
 
+.content{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  
+ 
+  
+  
+  
+}
+
 .expense__name {
   font-weight: 200;
   font-size: 18px;
+  width: 100%;
+ 
 
   
   
@@ -116,12 +132,17 @@ body {
 .expense__amount {
   font-weight: 200;
   font-size: 18px;
+  width: max-content;
   
-  margin-left: 10px;
+  
+  
 }
 
 .expense__buttons {
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
   gap: 10px;
 }
 
@@ -194,7 +215,7 @@ body {
 .column__body {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 10px;
   border-radius: 10px;
   background-color: #f9f9f9;
@@ -214,7 +235,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   color: #8e49e8;
-  margin-left: 10px;
+  
 }
 
 
@@ -222,13 +243,13 @@ body {
   font-weight: 600;
   font-size: 18px;
   color: #8e49e8;
-  margin-left: 10px;
+  
 }
 .column__total {
   font-weight: 600;
   font-size: 18px;
   color: #8e49e8;
-  margin-left: 10px;
+  
 }
 
 
@@ -236,7 +257,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   color: #8e49e8;
-  margin-left: 10px;
+  
 }
 
 

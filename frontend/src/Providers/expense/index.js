@@ -1,8 +1,6 @@
 import service from "../../Services/core";
 import { useQuery, useMutation, useQueryClient } from "react-query";
 
-const KEY = "expense";
-
 export function useExpense() {
   const queryData =
     useQuery({
