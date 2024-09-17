@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #00d2ff, #3a7bd5);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Home {
+  background: #ffffff;
+  width: 600px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.Home header {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.Home .inputexpense {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 20px 0;
+  gap: 10px;
+  border: solid  rgba(0, 0, 0, 0.05); 
+   border-radius: 50px ;
+   width: auto;
+   padding: 10px;
+
+
+}
+
+
+.inputexpense input {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.inputexpense h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+.inputexpense input:focus {
+  border-color: #8e49e8;
+  box-shadow: 0px 0px 5px rgba(142, 73, 232, 0.3);
+}
+
+.inputexpense button {
+  background: #8e49e8;  
+  color: white;          
+  border: none;           
+  padding: 10px 15px;     
+  font-size: 20px;        
+  margin-left: 10px;      
+  border-radius: 50px;    
+  cursor: pointer;        
+  transition: 0.3s ease;  
+  width: 45px;            
+  height: 45px;
+  display: flex;
+  align-items: center;    
+  justify-content: center; 
+}
+
+.inputexpense button:hover {
+  background: #6e35c1;    
+}
+
+.expense-content {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.expense__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+  gap: 10px; 
+}
+
+.expense__name {
+  font-weight: 200;
+  font-size: 18px;
+
+  
+  
+}
+
+.expense__amount {
+  font-weight: 200;
+  font-size: 18px;
+  
+  margin-left: 10px;
+}
+
+.expense__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.expense__deleteButton, .expense__editButton {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.expense__deleteButton {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.expense__deleteButton:hover {
+  background-color: #c0392b;
+}
+
+.expense__editButton {
+  background-color: #8e49e8;
+  color: white;
+}
+
+.expense__editButton:hover {
+  background-color: #6e35c1;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer span {
+  font-weight: 500;
+  align-items: center;
+}
+
+.footer button {
+  padding: 8px 15px;
+  background-color: #8e49e8;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer button:hover {
+  background-color: #6e35c1;
+}
+
+.footer .pendingTasks {
+  font-weight: 600;
+  color: #8e49e8;
+}
+
+
+.column-content {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.column__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+  gap: 10px; 
+}
+
+.column__name {
+  font-weight: 500;
+  font-size: 18px;
+  
+  color: #8e49e8;
+}
+
+.column__amount {
+  font-weight: 600;
+  font-size: 18px;
+  color: #8e49e8;
+  margin-left: 10px;
+}
+
+
+.column__rate {
+  font-weight: 600;
+  font-size: 18px;
+  color: #8e49e8;
+  margin-left: 10px;
+}
+.column__total {
+  font-weight: 600;
+  font-size: 18px;
+  color: #8e49e8;
+  margin-left: 10px;
+}
+
+
+.column__action {
+  font-weight: 600;
+  font-size: 18px;
+  color: #8e49e8;
+  margin-left: 10px;
+}
+
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.expense-form {
+  margin-top: 20px;
+}
+
+.expense-form div {
+  margin-bottom: 10px;
+}
+
+.expense-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.expense-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;;
+}
+
+.expense-form button {
+  background: #8e49e8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.expense-form button:hover {
+  background: #7135b7;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+
+
+
+
