@@ -7,10 +7,10 @@ import Column from "./Columns";
 
 const Home = () => {
   const { data, isLoading, error } = useExpense();
-  console.log(data)
+  
 
   if (error) return <div>Request Failed</div>;
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <div className="loader"></div>;
 
   return (
     <div className="Home">
