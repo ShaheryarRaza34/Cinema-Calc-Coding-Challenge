@@ -42,7 +42,6 @@ This is a full-stack Expense Management Application built using **.NET Core** fo
 
     To set up the database schema:
     ```bash
-    dotnet ef migrations add InitialMigration
     dotnet ef database update
     ```
 
@@ -60,12 +59,12 @@ This is a full-stack Expense Management Application built using **.NET Core** fo
 
 2. **Install Dependencies:**
     ```bash
-    npm install
+    yarn
     ```
 
 3. **Run the Frontend App:**
     ```bash
-    npm start
+    yarn start
     ```
 
     The frontend will be running at `http://localhost:3000` by default.
