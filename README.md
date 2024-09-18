@@ -143,7 +143,7 @@ Precise number calculations are handled using JavaScript's built-in number types
 ### **Frontend:**
 - **React** ⚛️
 - **CSS Modules** 🖍️
-- **React Hooks** for state management 🔗
+- **React Query and Hooks** for state management 🔗
 - **Fetch** for HTTP requests 🌐
 
 ---
